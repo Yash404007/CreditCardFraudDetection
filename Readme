@@ -1,0 +1,32 @@
+# Credit Card Fraud Detection
+
+This project demonstrates a machine learning model for detecting fraudulent credit card transactions. The dataset used is based on real-world financial transaction data, with anonymized features and a target indicating whether a transaction is fraudulent. The goal is to accurately classify transactions as either fraudulent or legitimate.
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Dataset](#dataset)
+3. [Features](#features)
+4. [Model Training](#model-training)
+5. [Results](#results)
+6. [Installation](#installation)
+7. [Usage](#usage)
+8. [Future Improvements](#future-improvements)
+9. [License](#license)
+
+## Project Overview
+
+Credit card fraud detection is crucial in the finance industry to minimize the financial losses caused by fraudulent transactions. This project leverages machine learning to classify transactions based on patterns and features. We train the model on historical transaction data and evaluate its performance to determine its accuracy in detecting fraud.
+
+## Dataset
+
+- The dataset used for this project is from the [Kaggle Credit Card Fraud Detection dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+- It contains `284,807` transactions with `31` features, including a target variable `Class` where `1` indicates fraud and `0` indicates legitimate transactions.
+- Features `V1`, `V2`, ... `V28` are principal components derived from PCA for confidentiality, along with two additional columns: `Time` and `Amount`.
+
+## Features
+
+- **Time**: Number of seconds elapsed between this transaction and the first transaction in the dataset.
+- **Amount**: Transaction amount.
+- **V1-V28**: Principal component analysis (PCA) components to protect sensitive information.
+- **Class**: Target variable indicating whether a transaction is fraudulent (`1`) or not (`0`).
